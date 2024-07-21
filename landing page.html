@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGT Bracelets</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #14f0fc;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #1af1f1;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #06fbea;
+        }
+
+        #home {
+            background: url('C:/Users/tarun/OneDrive/Pictures/BG bracelets.jpg') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 5em;
+            color: #0af9f9;
+        }
+
+        .hero p {
+            font-size: 2em;
+            color: #0af9f9;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .section {
+            padding: 40px 20px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section h2 {
+            color: #00ffee;
+            margin-bottom: 20px;
+            font-size: 3em;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product {
+            margin: 30px;
+            text-align: left;
+            position: relative;
+            width: 500px;
+            display: flex;
+            align-items: center;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .product img:hover {
+            transform: scale(1.1);
+        }
+
+        .product-info {
+            color: #00ccff;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .product-material,
+        .product-size,
+        .product-availability {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .product-price {
+            color: #17d2e2;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .shop-button {
+            background-color: #10cbe0;
+            color: #1a248f;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        .shop-button:hover {
+            background-color: #00b3e0;
+        }
+
+        .show-more-button {
+            background-color: #10cbe0;
+            color: #1a248f;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        .show-more-button:hover {
+            background-color: #00b3e0;
+        }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #0fe7c6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #15fee7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#styles">Styles</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home">
+        <div class="hero">
+            <h1>Welcome to Classical Bracelets</h1>
+            <p>"Unique Bracelets for unique Souls"</p>
+        </div>
+    </div>
+    <main>
+        <section class="section" id="styles">
+            <h2>Amazing Styles</h2>
+            <p>Check out our variety of neon bracelets!</p>
+        </section>
+        <section class="section" id="gallery">
+            <h2>Gallery</h2>
+            <p>Explore our exclusive collection of bracelets with detailed descriptions and prices.</p>
+            <div class="gallery">
+                <div class="product">
+                    <img src="C:/Users/tarun/OneDrive/Desktop/pic/blue stone bracelets.jpg" alt="Bracelet Image 1">
+                    <div>
+                        <div class="product-info">Blue Stone Bracelet</div>
+                        <div class="product-description">Beautiful blue stone bracelet perfect for any occasion.</div>
+                        <div class="product-material">Material: Blue Stone</div>
+                        <div class="product-size">Size: Adjustable</div>
+                        <div class="product-availability">Availability: In Stock</div>
+                        <div class="product-price">$20.00</div>
+                        <button class="shop-button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="C:/Users/tarun/OneDrive/Desktop/pic/Flower Petal .jpg" alt="Bracelet Image 2">
+                    <div>
+                        <div class="product-info">Flower Petal Bracelet</div>
+                        <div class="product-description">Delicate flower petal bracelet to add a touch of elegance.</div>
+                        <div class="product-material">Material: Metal, Enamel</div>
+                        <div class="product-size">Size: Medium</div>
+                        <div class="product-availability">Availability: In Stock</div>
+                        <div class="product-price">$25.00</div>
+                        <button class="shop-button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="C:/Users/tarun/OneDrive/Desktop/pic/Pink stone .jpg" alt="Bracelet Image 3">
+                    <div>
+                        <div class="product-info">Pink Stone Bracelet</div>
+                        <div class="product-description">Charming pink stone bracelet, a lovely gift idea.</div>
+                        <div class="product-material">Material: Pink Stone</div>
+                        <div class="product-size">Size: Small</div>
+                        <div class="product-availability">Availability: Out of Stock</div>
+                        <div class="product-price">$22.00</div>
+                        <button class="shop-button">Shop Now</button>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\tarun\OneDrive\Desktop\pic\Rose heart Stone .jpg" alt="Bracelet Image 4">
+                    <div>
+                        <div class="product-info">Rose Heart Stone Bracelet</div>
+                        <div class="product-description">Elegant rose heart stone bracelet, perfect for special occasions.</div>
+                        <div class="product-material">Material: Rose Quartz</div>
+                        <div class="product-size">Size: Adjustable</div>
+                        <div class="product-availability">Availability: In Stock</div>
+                        <div class="product-price">$24.00</div>
+                        <button class="shop-button">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <button class="show-more-button" onclick="showMore()">Show More</button>
+        </section>
+        <section class="section" id="about">
+            <h2>About Us</h2>
+            <p>At Classical Bracelets, we offer a wide selection of high-quality neon bracelets, crafted with care and precision to provide you with exquisite designs that will light up your wardrobe. Each bracelet is meticulously designed to ensure a perfect blend of style and durability. Our collection features a variety of neon colors that add a vibrant touch to any outfit, making you stand out in any crowd. We use premium materials, including semi-precious stones and high-grade metals, to ensure longevity and elegance. Our bracelets come in adjustable sizes to provide a comfortable fit for everyone. Whether you're looking for a bold statement piece or a subtle accent, our diverse range has something to suit every taste. We pride ourselves on our attention to detail, ensuring that each bracelet is a unique work of art. Our designs are inspired by both contemporary trends and timeless classics, offering something for every fashion-forward individual. At Classical Bracelets, customer satisfaction is our top priority, and we strive to exceed expectations with every piece we create. Enhance your style with our stunning neon bracelets, perfect for any occasion, from casual outings to formal events.</p>
+        </section>
+        <section class="section" id="contact">
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="3" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Neon Bracelets</p>
+    </footer>
+    <script src="../scripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log("JavaScript loaded!");
+        });
+
+        function showMore() {
+            // Implement functionality to show more products
+            alert("Show more products functionality to be implemented.");
+        }
+    </script>
+</body>
+</html>
